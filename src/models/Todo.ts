@@ -1,4 +1,4 @@
 export interface Todo {
-    title: string;
-    content: string;
+    title: String;
+    content: String;
 }

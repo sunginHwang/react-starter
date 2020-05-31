@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 type TodoItemProps = {
-    title: string,
-    content: string
+    title: String,
+    content: String
 }
 
 function TodoItem({title, content}: TodoItemProps) {
