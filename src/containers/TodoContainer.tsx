@@ -2,7 +2,7 @@ import React from 'react';
 import TodoItem from "../components/todo/TodoItem";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../models/redux/RootState";
-import todo from "../store/modules/todo";
+import todo, {fetchTodoAction} from "../store/modules/todo";
 
 type TodoContainerProps = {}
 
@@ -15,6 +15,7 @@ const TodoContainer = ({}: TodoContainerProps) => {
 
     const notifySomething = (changeTitle: string) => {
         dispatch(todo.actions.changeTodoTitle(changeTitle));
+        dispatch(fetchTodoAction(changeTitle));
     }
 
 
